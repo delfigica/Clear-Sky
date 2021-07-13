@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat&display=swap");
+
+.container {
+  display: grid;
+  place-items: center;
+  color: white;
+  min-height: 100vh;
+  background: #136a8a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #267871,
+    #136a8a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #267871,
+    #136a8a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.welcome {
+  text-align: center;
+}
+.title {
+  padding: 20px 0px;
+}
+#h1-welcome {
+  font-family: "Inter", sans-serif;
+  font-size: 3em;
+  margin: 10px 0px;
+}
+#p-welcome {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+}
+#input-search {
+  width: 300px;
+  height: 30px;
+  margin: 5px;
+  text-align: center;
+}
+#input-submit {
+  width: 120px;
+  height: 30px;
+  margin: 5px;
+}
+#input-search,
+#input-submit {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(28, 24, 24, 0.618);
+  font-weight: 800;
+  color: white;
+  
+}
+.d-none {
+  display: none;
+}
+.img-container {
+    max-width: 100px;
+    text-align: center;
+}
+img {
+    width: 100%;
+}
+.card {
+  font-family: "Montserrat", sans-serif;
+}
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#city {
+  font-size: 2.5em;
+}
+#description {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+#temperature {
+  margin: 10px 0px;
+  font-size: 3em;
+}
+.card-item {
+  font-size: 1.2em;
+  font-weight: 800;
+  margin: 10px;
+  text-align: center;
+}
+.max-min {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+.data {
+  font-size: 1.1em;
+}
+@media only screen and (max-width: 700px) {
+  #city {
+    font-size: 2em;
+  }
+  #temperature {
+    font-size: 2.5em;
+    margin: 5px;
+  }
+}

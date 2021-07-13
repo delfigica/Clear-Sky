@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="welcome">
+        <div class="title">
+            <h1 id="h1-welcome">CLEAR SKY</h1>
+            <p id="p-welcome">
+                Busque su ciudad
+            </p>
+        </div>
+        <div class="search">
+            <input type="text" name="city" id="input-search" required='true' [(ngModel)]="city" >
+            <button type="submit" id="input-submit" (click)="showWeather()">Buscar</button>
+        </div>
+    </div>
+    <div class="card d-none">
+        <div class="card-header">
+            <div class="img-container">
+                <img [src]="chooseImageFromText(data.weather[0].icon)">
+            </div>
+          <h2 id="city">{{ data.name }}, {{ data.sys.country}}</h2>
+          <p id="description">{{ data.weather[0].description }}</p>
+          <div class="card-item">
+            <p id="temperature">{{ data.main.temp | number: '1.0-0'}}°</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="max-min">
+            <div class="card-item">
+              <h3>Mínima</h3>
+              <p class="data">{{ data.main.temp_min | number: '1.0-0'}} °</p>
+            </div>
+            <div class="card-item">
+              <h3>Máxima</h3>
+              <p class="data">{{ data.main.temp_max | number: '1.0-0'}} °</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <h3>Sensación térmica</h3>
+            <p class="data">{{ data.main.feels_like | number: '1.0-0'}} °</p>
+          </div>
+          <div class="card-item">
+            <h3>Húmedad</h3>
+            <p class="data">{{ data.main.humidity | number: '1.0-0'}} %</p>
+          </div>
+          <div class="card-item">
+            <h3>Presión</h3>
+            <p class="data">{{ data.main.pressure }} hPa</p>
+          </div>
+        </div>
+      </div>
+</div>
