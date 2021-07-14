@@ -6,12 +6,12 @@
                 Busque su ciudad
             </p>
         </div>
-        <div class="search">
+        <div class="search d-none">
             <input type="text" name="city" id="input-search" required='true' [(ngModel)]="city" >
             <button type="submit" id="input-submit" (click)="showWeather()">Buscar</button>
         </div>
     </div>
-    <div class="card d-none">
+    <div class="card ">
         <div class="card-header">
             <div class="img-container">
                 <img [src]="chooseImageFromText(data.weather[0].icon)">
