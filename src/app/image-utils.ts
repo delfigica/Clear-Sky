@@ -1,19 +1,19 @@
 export const chooseImageFromTextAndNight = (icon:string) => {
     return {
-        "01n":"../assets/moon.png",
-        "01d":"../assets/sun.png",
-        "02d":"../assets/cloudy.png",
-        "02n":"../assets/Cloudy-moon.png",
-        "03d":"../assets/clouds.png",
-        "03n":"../assets/clouds.png",
-        "04d":"../assets/clouds.png",
-        "04n":"../assets/clouds.png",
-        "09d":"../assets/rainy.png",
-        "09n":"../assets/rainy.png",
-        "11d":"../assets/thunderstorm.png",
-        "11n":"../assets/thunderstorm.png",
-        "13d":"../assets/snow.png",
-        "13n":"../assets/snow.png",
+        "01n":"https://raw.githubusercontent.com/delfigica/Clear-Sky/main/src/assets/moon.png",
+        "01d":"https://raw.githubusercontent.com/delfigica/Clear-Sky/main/src/assets/sun.png",
+        "02d":"https://raw.githubusercontent.com/delfigica/Clear-Sky/main/src/assets/cloudy.png",
+        "02n":"https://raw.githubusercontent.com/delfigica/Clear-Sky/main/src/assets/Cloudy-moon.png",
+        "03d":"https://raw.githubusercontent.com/delfigica/Clear-Sky/main/src/assets/clouds.png",
+        "03n":"https://raw.githubusercontent.com/delfigica/Clear-Sky/main/src/assets/clouds.png",
+        "04d":"https://raw.githubusercontent.com/delfigica/Clear-Sky/main/src/assets/clouds.png",
+        "04n":"https://raw.githubusercontent.com/delfigica/Clear-Sky/main/src/assets/clouds.png",
+        "09d":"https://raw.githubusercontent.com/delfigica/Clear-Sky/main/src/assets/rainy.png",
+        "09n":"https://raw.githubusercontent.com/delfigica/Clear-Sky/main/src/assets/rainy.png",
+        "11d":"https://raw.githubusercontent.com/delfigica/Clear-Sky/main/src/assets/thunderstorm.png",
+        "11n":"https://raw.githubusercontent.com/delfigica/Clear-Sky/main/src/assets/thunderstorm.png",
+        "13d":"https://raw.githubusercontent.com/delfigica/Clear-Sky/main/src/assets/snow.png",
+        "13n":"https://raw.githubusercontent.com/delfigica/Clear-Sky/main/src/assets/snow.png",
     }[icon] || ""
 }
 
