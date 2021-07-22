@@ -19,12 +19,8 @@ export class AppComponent {
 
     this.clima()
 
-    this.imageChange()
   }
 
-/*   getCity(city: any){
-    console.log($event);
-  } */
   clima() {
     const apiKey = '8de24b65852e6b354d3e60e84a5a209b';
     let city = this.city
@@ -51,10 +47,12 @@ export class AppComponent {
   showWeather(){
     const show = document.querySelector(".card");
     show?.classList.remove('d-none');
+    show?.classList.add('d-flex')
     const noShow = document.querySelector('.title');
     noShow?.classList.add('d-none');
+    const showMenu = document.querySelector('.nav');
+    showMenu?.classList.remove('d-none')
     this.clima();
-    this.imageChange();
   }
 
   chooseImageFromText = chooseImageFromTextAndNight
