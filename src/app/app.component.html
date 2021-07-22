@@ -33,17 +33,19 @@
               <p class="data">{{ data.main.temp_max | number: '1.0-0'}} °</p>
             </div>
           </div>
-          <div class="card-item">
-            <h3>Sensación térmica</h3>
-            <p class="data">{{ data.main.feels_like | number: '1.0-0'}} °</p>
-          </div>
-          <div class="card-item">
-            <h3>Húmedad</h3>
-            <p class="data">{{ data.main.humidity | number: '1.0-0'}} %</p>
-          </div>
-          <div class="card-item">
-            <h3>Presión</h3>
-            <p class="data">{{ data.main.pressure }} hPa</p>
+          <div class="datosextras">
+            <div class="card-item">
+              <h3>Sensación térmica</h3>
+              <p class="data">{{ data.main.feels_like | number: '1.0-0'}} °</p>
+            </div>
+            <div class="card-item">
+              <h3>Húmedad</h3>
+              <p class="data">{{ data.main.humidity | number: '1.0-0'}} %</p>
+            </div>
+            <div class="card-item">
+              <h3>Presión</h3>
+              <p class="data">{{ data.main.pressure }} hPa</p>
+            </div>
           </div>
         </div>
       </div>
