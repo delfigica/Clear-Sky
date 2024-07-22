@@ -1,6 +1,5 @@
-# Weather Application
-
-Welcome to the Weather Application! This Angular-based app provides weather information for multiple cities using the OpenWeatherMap API. The custom design ensures a user-friendly experience, allowing users to easily view current weather conditions and forecasts for various locations.
+# Clear Sky
+Welcome to the Clear Sky Application! This Angular-based app provides weather information for multiple cities using the OpenWeatherMap API. The custom design ensures a user-friendly experience, allowing users to easily view current weather conditions and forecasts for various locations.
 
 ## Main Features
 
